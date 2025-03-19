@@ -88,10 +88,10 @@ const Carousel = () => {
             </div>
           </div>
         </div>
-        <div className="carousel-container">
+        {/* <div className="carousel-container">
           <div id="header-carousel" className="carousel">
             <div className="carousel-inner">
-              {/* Your carousel items go here */}
+          
             </div>
           </div>
           <div className="custom-carousel-controls">
@@ -112,7 +112,7 @@ const Carousel = () => {
               &#x276F;
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
