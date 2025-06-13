@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div>
-      <button
+      {/* <button
         onClick={toggleTheme}
         style={{
           position: "fixed",
@@ -25,7 +25,7 @@ const App = () => {
         }}
       >
         Toggle Theme
-      </button>
+      </button> */}
       <Header />
       <Carousel />
       <AboutUs />

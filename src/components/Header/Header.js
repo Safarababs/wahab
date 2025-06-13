@@ -107,19 +107,6 @@ const Header = () => {
               <small className="fab fa-linkedin-in text-primary"></small>
             </a>
           </div>
-          {/* Theme Toggle Button */}
-          <button
-            className="btn btn-primary ms-3"
-            onClick={toggleTheme}
-            style={{
-              position: "absolute",
-              top: 10,
-              right: 10,
-              zIndex: 9999,
-            }}
-          >
-            Toggle Theme
-          </button>
         </div>
       </nav>
     </div>
