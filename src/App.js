@@ -7,6 +7,8 @@ import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import CallbackForm from "./components/ContactForm/ContactForm";
 import Projects from "./components/Projects/Projects";
+import TestimonialCarousel from "./components/Testimonial/Testimonial";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   const toggleTheme = () => {
@@ -34,6 +36,8 @@ const App = () => {
       <ServicesSection />
       <CallbackForm />
       <Projects />
+      <TestimonialCarousel />
+      <Footer />
     </div>
   );
 };
