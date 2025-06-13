@@ -9,8 +9,23 @@ import CallbackForm from "./components/ContactForm/ContactForm";
 import Projects from "./components/Projects/Projects";
 
 const App = () => {
+  const toggleTheme = () => {
+    document.body.classList.toggle("dark-mode");
+  };
+
   return (
     <div>
+      <button
+        onClick={toggleTheme}
+        style={{
+          position: "fixed",
+          bottom: 190,
+          left: 10,
+          zIndex: 1000,
+        }}
+      >
+        Toggle Theme
+      </button>
       <Header />
       <Carousel />
       <AboutUs />

@@ -1,6 +1,10 @@
 import React from "react";
 
 const Header = () => {
+  const toggleTheme = () => {
+    document.body.classList.toggle("dark-mode");
+  };
+
   return (
     <div
       className="container-fluid fixed-top px-0 wow fadeIn"
@@ -29,6 +33,7 @@ const Header = () => {
       <nav
         className="navbar navbar-expand-lg navbar-light py-lg-0 px-lg-5 wow fadeIn"
         data-wow-delay="0.1s"
+        style={{ position: "relative" }}
       >
         <a href="/" className="navbar-brand ms-4 ms-lg-0">
           <h1 className="display-5 text-primary m-0">Wahab</h1>
@@ -102,6 +107,19 @@ const Header = () => {
               <small className="fab fa-linkedin-in text-primary"></small>
             </a>
           </div>
+          {/* Theme Toggle Button */}
+          <button
+            className="btn btn-primary ms-3"
+            onClick={toggleTheme}
+            style={{
+              position: "absolute",
+              top: 10,
+              right: 10,
+              zIndex: 9999,
+            }}
+          >
+            Toggle Theme
+          </button>
         </div>
       </nav>
     </div>

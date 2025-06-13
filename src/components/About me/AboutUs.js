@@ -33,7 +33,10 @@ const AboutUs = () => {
   const [activeTab, setActiveTab] = useState("nav-story");
 
   return (
-    <div className="container-xxl py-5" style={{ backgroundColor: "#DEE3FB" }}>
+    <div
+      className="container-xxl py-5"
+      style={{ backgroundColor: "var(--background)" }}
+    >
       <div className="container">
         <div className="row g-4 align-items-end mb-4">
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">

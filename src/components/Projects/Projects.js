@@ -1,68 +1,75 @@
-import React, { useEffect } from "react";
+import React from "react";
+
+const projects = [
+  {
+    title: "Data Science Dashboard",
+    icon: "fa-chart-line",
+    image: "img/project-1.jpg",
+    description:
+      "Interactive dashboard for data visualization and analytics using Python, Pandas, and Plotly.",
+    tags: ["Python", "Pandas", "Plotly"],
+    link: "#",
+  },
+  {
+    title: "Machine Learning Model Deployment",
+    icon: "fa-robot",
+    image: "img/project-2.jpg",
+    description:
+      "Deployed ML models with Flask and Docker, providing a REST API for predictions.",
+    tags: ["Python", "Flask", "Machine Learning"],
+    link: "#",
+  },
+  {
+    title: "Web Scraping Automation",
+    icon: "fa-spider",
+    image: "img/project-3.jpg",
+    description:
+      "Automated data extraction from websites using BeautifulSoup and Selenium.",
+    tags: ["Python", "BeautifulSoup", "Selenium"],
+    link: "#",
+  },
+];
 
 const Projects = () => {
-  const projects = [
-    {
-      title: "Financial Planning",
-      image: "img/project-1.png",
-      link: "#",
-    },
-    {
-      title: "Cash Investment",
-      image: "img/project-2.png",
-      link: "#",
-    },
-    {
-      title: "Financial Consultancy",
-      image: "img/project-3.jpeg",
-      link: "#",
-    },
-    {
-      title: "Business Loans",
-      image: "img/project-4.jpeg",
-      link: "#",
-    },
-  ];
-
-  useEffect(() => {
-    // Initialize Owl Carousel after component has mounted
-    if (window.$) {
-      window.$(".owl-carousel").owlCarousel({
-        loop: true,
-        nav: true,
-        items: 1, // You can adjust the number of items visible at once
-        autoplay: true, // Optional: Enable autoplay if needed
-        autoplayTimeout: 5000, // Optional: Set autoplay timeout
-        autoplayHoverPause: true, // Optional: Pause autoplay on hover
-      });
-    }
-  }, []);
-
   return (
-    <div className="container-xxl py-5">
+    <div className="container-xxl feature py-5">
       <div className="container">
         <div className="text-center mx-auto" style={{ maxWidth: "600px" }}>
           <p className="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">
-            Our Projects
+            Projects
           </p>
-          <h1 className="display-5 mb-5">We Have Completed Latest Projects</h1>
+          <h1 className="display-5 mb-5">Python & Data Science Work</h1>
         </div>
-
-        <div className="owl-carousel project-carousel">
-          {projects.map((project, index) => (
-            <div className="project-item pe-5 pb-5" key={index}>
-              <div className="project-img mb-3">
+        <div className="row g-4 align-items-stretch">
+          {projects.map((project, idx) => (
+            <div className="col-md-4" key={idx}>
+              <div className="feature-box border rounded p-4 h-100 d-flex flex-column">
                 <img
-                  className="img-fluid rounded"
                   src={project.image}
                   alt={project.title}
+                  className="img-fluid rounded mb-3"
+                  style={{ minHeight: "180px", objectFit: "cover" }}
                 />
-                <a href={project.link}>
-                  <i className="fa fa-link fa-3x text-primary"></i>
+                <i className={`fa ${project.icon} fa-3x text-primary mb-3`}></i>
+                <h4 className="mb-3">{project.title}</h4>
+                <p className="mb-3">{project.description}</p>
+                <div className="mb-2">
+                  {project.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="badge bg-primary me-1"
+                      style={{
+                        background: "var(--primary)",
+                        color: "var(--light)",
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <a className="fw-semi-bold mt-auto" href={project.link}>
+                  View Project <i className="fa fa-arrow-right ms-1"></i>
                 </a>
-              </div>
-              <div className="project-title">
-                <h4 className="mb-0">{project.title}</h4>
               </div>
             </div>
           ))}

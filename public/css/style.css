@@ -5,6 +5,18 @@
   --tertiary: #555555;
   --light: #dfe4fd;
   --dark: #011a41;
+  --background: #fff;
+  --text: #222;
+}
+
+.dark-mode {
+  --primary: #0cf;
+  --secondary: #e93c05;
+  --tertiary: #aaa;
+  --light: #222;
+  --dark: #dfe4fd;
+  --background: #222;
+  --text: #fff;
 }
 
 .back-to-top {
@@ -37,6 +49,20 @@ h6,
 .h6,
 .fw-semi-bold {
   font-weight: 500 !important;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text);
 }
 
 /*** Spinner ***/
@@ -577,9 +603,10 @@ h6,
   box-shadow: none;
 }
 
+.footer,
 .copyright {
   color: var(--light);
-  background: #000b1c;
+  background: var(--dark);
 }
 
 .copyright a {
@@ -588,4 +615,17 @@ h6,
 
 .copyright a:hover {
   color: var(--primary);
+}
+
+.bg-light {
+  background-color: var(--background) !important;
+}
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+.text-light {
+  color: var(--light) !important;
+}
+.text-dark {
+  color: var(--text) !important;
 }
