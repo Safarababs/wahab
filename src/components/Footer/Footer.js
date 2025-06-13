@@ -56,37 +56,37 @@ const Footer = () => (
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Python Services</h4>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               Data Science Solutions
             </a>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               Machine Learning Models
             </a>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               Web Scraping Automation
             </a>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               API Development
             </a>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               Dashboard & Visualization
             </a>
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Quick Links</h4>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               About Me
             </a>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               Contact
             </a>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               Projects
             </a>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               Terms & Conditions
             </a>
-            <a className="btn btn-link" href="#">
+            <a className="btn btn-link" href="/">
               Support
             </a>
           </div>
@@ -118,14 +118,14 @@ const Footer = () => (
         <div className="row">
           <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
             &copy;{" "}
-            <a className="border-bottom" href="#">
+            <a className="border-bottom" href="/">
               Abdul Python Developer
             </a>
             , All Rights Reserved.
           </div>
           <div className="col-md-6 text-center text-md-end">
             Designed & Built by{" "}
-            <a className="border-bottom" href="#">
+            <a className="border-bottom" href="/">
               Abdul Wahab
             </a>
           </div>

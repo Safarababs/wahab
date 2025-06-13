@@ -1,10 +1,6 @@
 import React from "react";
 
 const Header = () => {
-  const toggleTheme = () => {
-    document.body.classList.toggle("dark-mode");
-  };
-
   return (
     <div
       className="container-fluid fixed-top px-0 wow fadeIn"

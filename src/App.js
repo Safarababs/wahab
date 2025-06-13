@@ -11,9 +11,9 @@ import TestimonialCarousel from "./components/Testimonial/Testimonial";
 import Footer from "./components/Footer/Footer";
 
 const App = () => {
-  const toggleTheme = () => {
-    document.body.classList.toggle("dark-mode");
-  };
+  // const toggleTheme = () => {
+  //   document.body.classList.toggle("dark-mode");
+  // };
 
   return (
     <div>
