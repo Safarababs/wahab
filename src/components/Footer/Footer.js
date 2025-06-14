@@ -56,37 +56,37 @@ const Footer = () => (
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Python Services</h4>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/data-science">
               Data Science Solutions
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/machine-learning">
               Machine Learning Models
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/WebScraping">
               Web Scraping Automation
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/ApiDevelopment">
               API Development
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/DashboardVisualization">
               Dashboard & Visualization
             </a>
           </div>
           <div className="col-lg-3 col-md-6">
             <h4 className="text-white mb-4">Quick Links</h4>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/about">
               About Me
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/contact">
               Contact
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/projects">
               Projects
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/TermsAndConditions">
               Terms & Conditions
             </a>
-            <a className="btn btn-link" href="/">
+            <a className="btn btn-link" href="/Support">
               Support
             </a>
           </div>
@@ -121,7 +121,7 @@ const Footer = () => (
             <a className="border-bottom" href="/">
               Abdul Python Developer
             </a>
-            , All Rights Reserved.
+            , 2024 - {new Date().getFullYear()} All Rights Reserved.
           </div>
           <div className="col-md-6 text-center text-md-end">
             Designed & Built by{" "}

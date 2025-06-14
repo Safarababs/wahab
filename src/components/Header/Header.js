@@ -47,10 +47,10 @@ const Header = () => {
             <a href="/" className="nav-item nav-link active">
               Home
             </a>
-            <a href="/" className="nav-item nav-link">
+            <a href="/about" className="nav-item nav-link">
               About
             </a>
-            <a href="/" className="nav-item nav-link">
+            <a href="/service" className="nav-item nav-link">
               Services
             </a>
             <div className="nav-item dropdown">
@@ -62,16 +62,14 @@ const Header = () => {
                 Pages
               </a>
               <div className="dropdown-menu border-light m-0">
-                <a href="/" className="dropdown-item">
+                <a href="/projects" className="dropdown-item">
                   Projects
                 </a>
-                <a href="/" className="dropdown-item">
+                <a href="/features" className="dropdown-item">
                   Features
                 </a>
-                <a href="/" className="dropdown-item">
-                  Team Member
-                </a>
-                <a href="/" className="dropdown-item">
+
+                <a href="/testimonial" className="dropdown-item">
                   Testimonial
                 </a>
                 <a href="/" className="dropdown-item">
@@ -79,7 +77,7 @@ const Header = () => {
                 </a>
               </div>
             </div>
-            <a href="/" className="nav-item nav-link">
+            <a href="/contact" className="nav-item nav-link">
               Contact
             </a>
           </div>
