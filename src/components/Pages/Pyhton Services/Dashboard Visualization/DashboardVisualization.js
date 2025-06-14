@@ -35,7 +35,7 @@ const DashboardVisualization = () => (
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <img
               className="img-fluid rounded shadow"
-              src="/img/dashboard-visualization.jpg"
+              src="img/dashboard.webp"
               alt="Dashboard & Visualization"
             />
           </div>

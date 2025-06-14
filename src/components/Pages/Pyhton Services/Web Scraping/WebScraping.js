@@ -35,7 +35,7 @@ const WebScraping = () => (
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <img
               className="img-fluid rounded shadow"
-              src="/img/web-scraping.jpg"
+              src="img/service-5.jpg"
               alt="Web Scraping Automation"
             />
           </div>

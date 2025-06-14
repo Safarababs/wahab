@@ -33,7 +33,7 @@ const ApiDevelopment = () => (
           <div className="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
             <img
               className="img-fluid rounded shadow"
-              src="/img/api-development.jpg"
+              src="img/api.webp"
               alt="API Development"
             />
           </div>
